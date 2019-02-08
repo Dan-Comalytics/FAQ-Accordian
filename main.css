@@ -1,0 +1,52 @@
+.faq-header {
+    display: block;
+    padding: 15px 10px;
+    background: #ededed;
+    position: relative;
+    overflow: hidden;
+	cursor: pointer;
+}
+
+.faq-header::after {
+    content: "\002B";
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.faq-header.active::after {
+    content: "\2212"
+}
+
+.faq-header:hover {
+    background: #dcdcdc;
+}
+
+.faq-header h3 {
+    float: left;
+}
+
+.faq-content {
+    padding: 20px 10px;
+    border-top: none;
+    border-left: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    display: none;
+}
+
+.faq-content p {
+	margin-bottom: 20px;
+}
+
+.faq-content ul,
+.faq-content ol {
+	list-style: auto;
+	padding-left: 20px;
+}
+
+.faq-content ul li,
+.faq-content ol li {
+	margin-bottom: 10px;
+}
