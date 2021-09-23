@@ -11,6 +11,7 @@ for(i = 0; i < faqItem.length; i ++) {
 		this.classList.toggle("active");
 		
 		if( content.style.display === "block" ) {
+			//Set the panel to not display
 			content.style.display = "none";
 		} else {
 			content.style.display = "block"; 
